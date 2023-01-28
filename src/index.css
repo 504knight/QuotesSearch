@@ -47,7 +47,7 @@ p {
 }
 
 .authorName {
-  font-size: .85rem;
+  font-size: 1.0rem;
   text-align: end;
 }
 
@@ -56,7 +56,6 @@ p {
   justify-content: end;
 }
 
-/* move  */
 .search h1 {
   font-size: 1.5em;
 }
@@ -72,7 +71,8 @@ p {
   box-shadow: 0 0 0 2px #080555;
   background-color: #0570d5;
   margin: 1rem;
-  color: #080555;
+  font-weight: 500;
+  color: #ffffff;
 }
 
 button {
