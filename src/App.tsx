@@ -39,7 +39,7 @@ function App() {
 
   return (
     <div className="App">
-      <div>
+      <div className={view}>
         <h1>QuoteSearch</h1>
         <form onSubmit={search}>
           <div>
@@ -56,17 +56,14 @@ function App() {
         {view === "random" && randomQuote?.author && (
           <>
             <div>
-              <p className="quoteText">{randomQuote?.content}</p>
+              <p>{randomQuote?.content}</p>
             </div>
-            <div>
-              <p className="authorName">- {randomQuote?.author}</p>
-            </div>
+            {randomQuote?.author && (
+              <div>
+                <p className="authorName">- {randomQuote?.author}</p>
+              </div>
+            )}
           </>
-        )}
-        {view === "random" && !randomQuote?.author && (
-          <div>
-            <p className="quoteText">{randomQuote?.content}</p>
-          </div>
         )}
         {view === "search" && (
           <div>
