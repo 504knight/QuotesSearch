@@ -21,7 +21,6 @@
 body {
   margin: 0;
   display: flex;
-  min-width: 320px;
   min-height: 100vh;
 }
 
@@ -55,6 +54,20 @@ p {
 .searchButton {
   display: flex;
   justify-content: end;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 400px;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0 2px #080555;
+  background-color: #0570d5;
+  margin: 1rem;
+  color: #080555;
 }
 
 button {
